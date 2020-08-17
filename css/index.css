@@ -5,8 +5,12 @@ body {
 }
 
 body > .exploits-message {
-  font-size: 30px;
+  font-size: 35px;
   margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+body > .exploits > .jailbreak {
   text-align: center;
 }
 
@@ -17,9 +21,13 @@ body > .exploits > .jailbreak {
 body > .exploits .title {
   font-size: 25px;
   line-height: 75px;
+  font-weight: 700;
 }
 
 body > .exploits .exploits-scripts > .button {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0px 10px 0px 10px;
   min-width: 200px;
   min-height: 50px;
   border: 1px solid #ffffff;
