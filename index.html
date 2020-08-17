@@ -1,6 +1,29 @@
-<!DOCTYPE html>
-<html>
+<html manifest="offlineCache.manifest">
+
+<head>
+	<meta charset="utf-8" />
+	<title>PS4 v6.72 Exploits Menu</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
 <body>
-<h1>Hello !</h1>
+	<div id="exploitsMessage" class="exploits-message">PS4 v6.72 Exploits Menu</div>
+	<div class="exploits">
+		<div class="jailbreak">
+			<div class="title">Jailbreak</div>
+			<div class="exploits-scripts">
+				<button class="button" onclick="loadExploitAndHEN(); return false">
+					Load Exploit + HEN
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function loadExploitAndHEN() {
+			updateExploitsMessage("Loading Exploit + HEN ...");
+		}
+	</script>
 </body>
 </html>
