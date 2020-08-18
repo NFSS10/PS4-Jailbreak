@@ -4,8 +4,6 @@ PS4 v6.72 exploits menu
 
 https://nfss10.github.io/PS4-Jailbreak/
 
-## TODO add more exploits/payloads
-
 ## Credits
 
 - Fire30 for the WebKit exploit
