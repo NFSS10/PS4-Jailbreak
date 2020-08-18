@@ -1,6 +1,45 @@
-<!DOCTYPE html>
-<html>
+<html manifest="offlineCache.manifest">
+
+<head>
+	<meta charset="utf-8" />
+	<title>PS4 v6.72 Exploits Menu</title>
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script src="exploits/utils.js"></script>
+	<script>
+		window.applicationCache.addEventListener("progress", updateCacheProgress, false);
+		window.applicationCache.oncached = function (e) { onCacheInstallation(); };
+		window.applicationCache.onupdateready = function (e) { onCacheInstallation(); };
+	</script>
+
+	<script src="exploits/common.js"></script>
+	<script src="exploits/exploit.js"></script>
+</head>
+
 <body>
-<h1>Hello !</h1>
+	<div id="exploitsMessage" class="exploits-message">PS4 v6.72 Exploits Menu</div>
+	<div class="exploits">
+		<div class="jailbreak">
+			<div class="title">Jailbreak</div>
+			<div class="exploits-scripts">
+				<button class="button" onclick="loadExploitAndHEN()">Load Exploit + HEN</button>
+				<button class="button" onclick="loadExploitAndMira()">Load Exploit + Mira</button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function loadExploitAndHEN() {
+			updateExploitsMessage("Loading Exploit + HEN ...");
+			setTimeout(jailbreakPs4(true), 500);
+		}
+
+		function loadExploitAndMira() {
+			updateExploitsMessage("Loading Exploit + Mira ...");
+			setTimeout(jailbreakPs4(false), 500);
+		}
+	</script>
 </body>
+
 </html>
