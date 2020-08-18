@@ -27,6 +27,13 @@
 				<button class="button" onclick="loadExploitAndMira()">Load Exploit + Mira</button>
 			</div>
 		</div>
+		<div class="payloads">
+			<div class="title">Payloads</div>
+			<div class="exploits-scripts">
+				<button class="button" onclick="disableUpdates()">Disable Updates</button>
+				<button class="button" onclick="enableUpdates()">Enable Updates</button>
+			</div>
+		</div>
 	</div>
 
 	<script>
@@ -38,6 +45,16 @@
 		function loadExploitAndMira() {
 			updateExploitsMessage("Loading Exploit + Mira ...");
 			setTimeout(jailbreakPs4(false), 500);
+		}
+
+		function disableUpdates() {
+			updateExploitsMessage("Disabling Updates ...");
+			loadPayload("exploits/payloads/disableUpdates.js", "Updates disabled !");
+		}
+
+		function enableUpdates() {
+			updateExploitsMessage("Enabling Updates ...");
+			loadPayload("exploits/payloads/enableUpdates.js", "Updates enabled !");
 		}
 	</script>
 </body>
